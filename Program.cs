@@ -1,31 +1,25 @@
 ﻿using System;
+
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.Write("Введіть початок діапазону: ");
-        int start = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введіть першу цифру:");
+        int digit1 = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Введіть кінець діапазону: ");
-        int end = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введіть другу цифру:");
+        int digit2 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Числа Фібоначчі у заданому діапазоні:");
+        Console.WriteLine("Введіть третю цифру:");
+        int digit3 = Convert.ToInt32(Console.ReadLine());
 
-        int fib1 = 0;
-        int fib2 = 1;
+        Console.WriteLine("Введіть четверту цифру:");
+        int digit4 = Convert.ToInt32(Console.ReadLine());
 
-        while (fib1 <= end)
-        {
-            if (fib1 >= start)
-            {
-                Console.Write(fib1 + ", ");
-            }
+        int number = digit1 * 1000 + digit2 * 100 + digit3 * 10 + digit4;
 
-            int nextFib = fib1 + fib2;
-            fib1 = fib2;
-            fib2 = nextFib;
-        }
-
-        Console.ReadLine();
+        Console.WriteLine($"Створене число: {number}");
     }
 }
+
+
